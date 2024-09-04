@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+.container
+{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.todo-app
+{
+    width: 100%;
+    max-width: 540px;
+    background: rgb(255, 255, 255);
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+.todo-app h2{
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.row
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(210, 231, 220);
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+.row input
+{
+    flex-basis: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 15px;
+}
+#input-task-time
+{
+    margin-top: 10px;
+}
+.add_task
+{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    /*background: rgba(234, 41, 5, 0.84);*/
+    background: rgba(38,97,92,0.87);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url("images/unchecked.png");
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+ul li.checked
+{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before
+{
+    background-image: url("images/checked.png");
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background: rgb(210, 231, 220);
+}
+
+
+
+
+
+
+
+
+
+
+.row_subtask
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.row_subtask input
+{
+    border: none;
+    outline: none;
+    background: rgb(210, 231, 220);
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 15px;
+    border-radius: 20px;
+    margin: 15px 10px 10px;
+}
+#input-task-to-add-sub
+{
+    flex-basis: 100%;
+}
+.row_subtask button
+{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: rgba(38,97,92,0.87);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    margin-top: 20px;
+    flex-basis: 100%;
+}
+
+
+.subtaskDiv
+{
+    width: 100%;
+    max-width: 540px;
+    background: rgb(255, 255, 255);
+    margin: 25px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+.subtaskDiv h3{
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#list-Task_and_subtask li
+{
+    margin-left: 50px;
+}
+#list-Task_and_subtask ul
+{
+    font-size: 18px;
+}

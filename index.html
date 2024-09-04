@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TO-DO list (AE)</title>
+</head>
+<body>
+<div class="container">
+
+    <div class="todo-app">
+        <h2 >TO-Do List</h2>
+        <div class="row">
+            <input type="text" name="" id="input-box" placeholder="Add your Task">
+
+            <input type="number" name="" id="input-task-time" placeholder="enter deadline num">
+
+        </div>
+        <button onclick="addTask()" class="add_task">Add Task</button>
+        <hr>
+        <div class="row_subtask">
+            <input type="text" name="" id="input-task-to-add-sub" placeholder="name of your main task">
+            <input type="text" name="" id="input-subtask" placeholder="Add your SubTask">
+            <input type="number" name="" id="input-subtask-time" placeholder="enter deadline num">
+            <button onclick="addsubtask()">Add Sub Task</button>
+<!--            <button onclick="storage_BST()">Save Tasks</button>-->
+        </div>
+        <hr>
+        <ul id="list-container">
+<!--            <li class="checked">task 1</li>-->
+<!--            <li>task 2</li>-->
+<!--            <li>task 3</li>-->
+        </ul>
+
+    </div>
+    <div class="subtaskDiv">
+        <h3>Task and SubTask</h3>
+        <ul id="list-Task_and_subtask">
+<!--            <ul>main task-->
+<!--                <li >task 3</li>-->
+<!--            </ul>-->
+        </ul>
+    </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
